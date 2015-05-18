@@ -67,3 +67,8 @@ them after checking the tree out:
     $ git submodule update
 
 Then compile WinSparkle as described above; no extra steps are required.
+
+## Unit tests
+
+Console project `Tests/WinSparkleTests` includes production `include/winsparkle-version.h` and `src/appcast.h`. It checks `WIN_SPARKLE_VERSION_STRING` / `WIN_SPARKLE_CHECK_VERSION` and empty vs filled `Appcast::IsValid` / `HasDownload`. Build `WinSparkleTests` (Release|x64) and run the resulting executable.
+
